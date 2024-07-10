@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Progreso2CATAPIJR.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Progreso2CATAPIJR.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Progreso2CATAPIJR">
+
+    <FlyoutItem Title="Cat Image" FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Cat Image">
+            <ShellContent Title="Cat Image" ContentTemplate="{DataTemplate views:CatImagePageJR}" />
+        </Tab>
+        <Tab Title="Saved Cat Images">
+            <ShellContent Title="Saved Cat Images" ContentTemplate="{DataTemplate views:SavedCatImagesPageJR}" />
+        </Tab>
+    </FlyoutItem>
+</Shell>

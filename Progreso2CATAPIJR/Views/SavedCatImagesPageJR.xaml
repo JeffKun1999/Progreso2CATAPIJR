@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Progreso2CATAPIJR.Views.SavedCatImagesPageJR"
+             Title="SavedCatImagesPageJR">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Frame BackgroundColor="DarkSlateGray" CornerRadius="10" Padding="10" Margin="0,0,0,10">
+                <Label Text="Imágenes Guardadas"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       TextColor="White"
+                       FontSize="Large"/>
+            </Frame>
+            <Button Text="Cargar Imágenes Guardadas"
+                    Command="{Binding LoadSavedCatImagesCommand}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Margin="0,10,0,10"/>
+            <CollectionView ItemsSource="{Binding SavedCatImages}"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Image Source="{Binding Url}" Aspect="AspectFit" HeightRequest="200"/>
+                            <Label Text="{Binding Breed}" FontSize="Medium" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
