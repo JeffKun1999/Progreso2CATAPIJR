@@ -6,6 +6,7 @@
     xmlns:views="clr-namespace:Progreso2CATAPIJR.Views"
     Shell.FlyoutBehavior="Flyout"
     Title="Progreso2CATAPIJR">
+    
 
     <FlyoutItem Title="Cat Image" FlyoutDisplayOptions="AsMultipleItems">
         <Tab Title="Cat Image">

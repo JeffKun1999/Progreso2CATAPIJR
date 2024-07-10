@@ -21,7 +21,7 @@ namespace Progreso2CATAPIJR.ViewModels
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
+        //Comentario para el commit
         public CatImageViewModelJR()
         {
             LoadRandomCatImageCommand = new Command(async () => await LoadRandomCatImage());
